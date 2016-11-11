@@ -1,0 +1,28 @@
+.cmb-new-date-container {
+	display: flex;
+	margin-right: -20px;
+}
+
+.cmb-new-date-field {
+	display: block;
+	width: 200px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.cmb-new-date-field-time {
+	width: 100px;
+}
+
+
+.cmb-new-date-field label {
+	display: block;
+	margin: 0 0 10px;
+}
+
+.cmb-new-date-field input,
+.cmb-new-date-field select {
+	width: 100% !important;
+	max-width: none;
+	box-sizing: border-box;
+}
