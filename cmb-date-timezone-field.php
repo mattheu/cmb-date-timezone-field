@@ -71,13 +71,13 @@ class CMB_Date_Timezone_Field extends CMB_Field {
 		parent::enqueue_scripts();
 
 		wp_enqueue_style( 'cmb-jquery-ui', trailingslashit( CMB_URL ) . 'css/vendor/jquery-ui/jquery-ui.css' );
-		wp_enqueue_style( 'cmb-new-date', plugins_url( 'custom-meta-boxes-new-date.css', __FILE__ ) );
+		wp_enqueue_style( 'cmb-new-date', plugins_url( 'cmb-date-timezone-field.css', __FILE__ ) );
 
 		if ( $this->args['time'] ) {
 			wp_enqueue_script( 'cmb-timepicker', trailingslashit( CMB_URL ) . 'js/jquery.timePicker.min.js', array( 'jquery', 'cmb-scripts' ) );
-			wp_enqueue_script( 'cmb-new-date', plugins_url( 'custom-meta-boxes-new-date.js', __FILE__ ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'cmb-timepicker', 'cmb-scripts' ) );
+			wp_enqueue_script( 'cmb-new-date', plugins_url( 'cmb-date-timezone-field.js', __FILE__ ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'cmb-timepicker', 'cmb-scripts' ) );
 		} else {
-			wp_enqueue_script( 'cmb-new-date', plugins_url( 'custom-meta-boxes-new-date.js', __FILE__ ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'cmb-scripts' ) );
+			wp_enqueue_script( 'cmb-new-date', plugins_url( 'cmb-date-timezone-field.js', __FILE__ ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'cmb-scripts' ) );
 		}
 
 	}
